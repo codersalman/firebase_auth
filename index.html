@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Auth</title>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script> 
+</head>
+<style>
+    form {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    label {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    input {
+      padding: 5px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      margin-right: 10px;
+    }
+    #email {
+      margin-bottom: 20px;
+    }
+  </style>
+  
+<body>
+<style>
+  form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  input {
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    margin-right: 10px;
+  }
+  #email {
+    margin-bottom: 20px;
+  }
+</style>
+
+<form>
+
+  <label id="label">Email:</label>
+  <input type="email" id="email" required>
+  <br>
+  <div id="id_pass">
+  <label>Password:</label>
+  <input type="password" id="password" required>
+  </div>
+
+  <br>
+  <button type="button" id="sign_up" onclick="signUp()">Sign Up</button>
+ <br>
+  <button type="button" id="sign_in" onclick="signIn()">Sign In</button>
+  <button type="button" id="sign_out" onclick="signOut()">Sign Out</button>
+</form>
+<script >
+
+const firebaseConfig = {
+  apiKey: "AIzaSyATI7V33EfeYDcAqLll5MbXVvosui6-JFI",
+  authDomain: "your-first-projcet.firebaseapp.com",
+  projectId: "your-first-projcet",
+  storageBucket: "your-first-projcet.appspot.com",
+  messagingSenderId: "1027647612111",
+  appId: "1:1027647612111:web:9583792dad08dbf3f443ba"
+};
+
+firebase.initializeApp(firebaseConfig);
+
+  </script>
+        <script src="/auth.js"></script>
+
+</body>
+</html>
